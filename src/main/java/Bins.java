@@ -24,8 +24,10 @@ public class Bins {
 
     @Override
     public String toString() {
-        return "Bins{" +
-                "results=" + results +
-                '}';
+        String stars = "***";
+        return "***\n" +
+                "Simulation of 2 dice tossed for 1000000 times." + stars + "\n" +
+                (String.format("%s%s\n", results, stars)) +
+                stars;
     }
 }

@@ -9,7 +9,7 @@ public class Simulation {
         Bins bins = new Bins(2, 12);
         Dice die = new Dice(2);
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 1; i <= 1000000; i++) {
             bins.setResult(die.tossAndSum());
         }
         System.out.println(bins);
