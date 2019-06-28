@@ -7,12 +7,14 @@ public class Dice {
         this.numberOfTosses = numberOfTosses;
     }
 
-    private int toss() {
+    // Test whether you can toss the die/dice.
+    static Integer toss() {
         Random rand = new Random();
         return rand.nextInt(6) + 1;
     }
 
-    public int tossAndSum() {
+    // Test whether you can toss die/dice and tally sums.
+    public Integer tossAndSum() {
         int total = 0;
         for (int i = 0; i < numberOfTosses; i++) {
             total += toss();

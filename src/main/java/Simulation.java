@@ -1,8 +1,8 @@
 public class Simulation {
 
     public static void main(String[] args) {
-        playWithTwoDice();
-        playWithTwo();
+        playWithTwoDice(); //You're going to want to test whether you can play with two dice.
+        playWithOne(); //You're going to want to test whether you can play with one die.
     }
 
     private static void playWithTwoDice() {
@@ -14,7 +14,7 @@ public class Simulation {
         }
         System.out.println(bins);
     }
-    private static void playWithTwo() {
+    private static void playWithOne() {
         Bins bins = new Bins(5, 30);
         Dice die = new Dice(5);
 
